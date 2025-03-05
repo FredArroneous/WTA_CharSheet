@@ -1371,6 +1371,66 @@ input.damage__max[value="15"] ~ .point__max--15 ~ .point {
   display: none;
 }
 
+input.damage__max[value="16"] ~ .point__max--16 ~ .point {
+  display: none;
+}
+
+input.damage__max[value="17"] ~ .point__max--17 ~ .point {
+  display: none;
+}
+
+input.damage__max[value="18"] ~ .point__max--18 ~ .point {
+  display: none;
+}
+
+input.damage__max[value="19"] ~ .point__max--19 ~ .point {
+  display: none;
+}
+
+input.damage__max[value="20"] ~ .point__max--20 ~ .point {
+  display: none;
+}
+
+input.damage__max[value="21"] ~ .point__max--21 ~ .point {
+  display: none;
+}
+
+input.damage__max[value="22"] ~ .point__max--22 ~ .point {
+  display: none;
+}
+
+input.damage__max[value="23"] ~ .point__max--23 ~ .point {
+  display: none;
+}
+
+input.damage__max[value="24"] ~ .point__max--24 ~ .point {
+  display: none;
+}
+
+input.damage__max[value="25"] ~ .point__max--25 ~ .point {
+  display: none;
+}
+
+input.damage__max[value="26"] ~ .point__max--26 ~ .point {
+  display: none;
+}
+
+input.damage__max[value="27"] ~ .point__max--27 ~ .point {
+  display: none;
+}
+
+input.damage__max[value="28"] ~ .point__max--28 ~ .point {
+  display: none;
+}
+
+input.damage__max[value="29"] ~ .point__max--29 ~ .point {
+  display: none;
+}
+
+input.damage__max[value="30"] ~ .point__max--30 ~ .point {
+  display: none;
+}
+
 input.damage__max[value="0"] ~ .point__max--1 ~ .point {
   display: none;
 }
@@ -1509,8 +1569,11 @@ button.discipline__button--add {
   display: none;
 }
 .discipline__roll-type-selector[type=hidden] ~ .discipline__roll-attrs .discipline__select-option--attrib,
-.discipline__roll-type-selector[type=hidden] ~ .discipline__roll-attrs .discipline__select-option--skills, .discipline__roll-type-selector[type=hidden] ~ .discipline__roll-discipline .discipline__select-option--attrib,
-.discipline__roll-type-selector[type=hidden] ~ .discipline__roll-discipline .discipline__select-option--skills {
+.discipline__roll-type-selector[type=hidden] ~ .discipline__roll-attrs .discipline__select-option--skills,
+.discipline__roll-type-selector[type=hidden] ~ .discipline__roll-attrs .discipline__select-option--renown,
+.discipline__roll-type-selector[type=hidden] ~ .discipline__roll-discipline .discipline__select-option--attrib,
+.discipline__roll-type-selector[type=hidden] ~ .discipline__roll-discipline .discipline__select-option--skills,
+.discipline__roll-type-selector[type=hidden] ~ .discipline__roll-attrs .discipline__select-option--renown {
   display: none;
 }
 .discipline__roll-type-selector[type=hidden][value=attributes] ~ .discipline__roll-attrs {
@@ -1525,10 +1588,17 @@ button.discipline__button--add {
 .discipline__roll-type-selector[type=hidden][value=skills] ~ .discipline__roll-attrs .discipline__select-option--skills {
   display: block;
 }
+.discipline__roll-type-selector[type=hidden][value=renown] ~ .discipline__roll-attrs {
+  display: block;
+}
+.discipline__roll-type-selector[type=hidden][value=renown] ~ .discipline__roll-attrs .discipline__select-option--renown {
+  display: block;
+}
 .discipline__roll-type-selector[type=hidden][value=discipline] ~ .discipline__roll-discipline {
   display: block;
   text-align: center;
 }
+
 .discipline__roll-type-selector, .discipline__groupselect {
   cursor: pointer;
   padding-left: 0.25rem;
@@ -3964,7 +4034,8 @@ input[type*=hidden][value=on] + .whisper strong {
 .sheet-rolltemplate-vampire.sheet-rolltemplate-darkmode .sheet-roll__hidden {
   display: none;
 }
-.sheet-rolltemplate-vampirechat .sheet-roll .sheet-roll__hidden[data-i18n-placeholder*=STRENGTH], .sheet-rolltemplate-vampirechat.sheet-rolltemplate-darkmode .sheet-roll .sheet-roll__hidden[data-i18n-placeholder*=STRENGTH],
+.sheet-rolltemplate-vampirechat .sheet-roll .sheet-roll__hidden[data-i18n-placeholder*=STRENGTH],
+.sheet-rolltemplate-vampirechat.sheet-rolltemplate-darkmode .sheet-roll .sheet-roll__hidden[data-i18n-placeholder*=STRENGTH],
 .sheet-rolltemplate-vampirecomp .sheet-roll .sheet-roll__hidden[data-i18n-placeholder*=STRENGTH],
 .sheet-rolltemplate-vampirecomp.sheet-rolltemplate-darkmode .sheet-roll .sheet-roll__hidden[data-i18n-placeholder*=STRENGTH],
 .sheet-rolltemplate-vampirepower .sheet-roll .sheet-roll__hidden[data-i18n-placeholder*=STRENGTH],
@@ -4691,8 +4762,8 @@ input[type*=hidden][value=on] + .whisper strong {
 .sheet-rolltemplate-vampire .sheet-roll__dice--success,
 .sheet-rolltemplate-vampire.sheet-rolltemplate-darkmode .sheet-roll__dice--success {
 /*  background-image: url("https://s3.amazonaws.com/files.d20.io/images/227894565/fdPl8WDo32cJH9KNDBzFBA/med.png?1623426721");*/
-  background-image: url("https://cdn.discordapp.com/attachments/582820173195640836/1344172945995595837/Success_White.png");
-  background-size: 25%;
+  background-image: url("https://raw.githubusercontent.com/FredArroneous/WTA_CharSheet/refs/heads/main/SuccessWhite.png");
+  background-size: 37%;
   background-position: center;
 }
 .sheet-rolltemplate-vampirechat .sheet-roll__dice--failure, .sheet-rolltemplate-vampirechat.sheet-rolltemplate-darkmode .sheet-roll__dice--failure,
@@ -4714,8 +4785,8 @@ input[type*=hidden][value=on] + .whisper strong {
 .sheet-rolltemplate-vampire .sheet-roll__dice--crit,
 .sheet-rolltemplate-vampire.sheet-rolltemplate-darkmode .sheet-roll__dice--crit {
 /*  background-image: url("https://s3.amazonaws.com/files.d20.io/images/227895148/mSAeeo0hopmFguENz6d9ZA/med.png?1623426977");*/
-  background-image: url("https://cdn.discordapp.com/attachments/582820173195640836/1344172945576169534/Crit_Success_White.png?ex=67bff21b&is=67bea09b&hm=75bbbb645b1f7582ed2736d481db60a446948fa9122f82bf774853152464a042&");
-  background-size: 30%;
+  background-image: url("https://raw.githubusercontent.com/FredArroneous/WTA_CharSheet/refs/heads/main/CritSuccessWhite.png");
+  background-size: 34%;
   background-position: center;
 }
 .sheet-rolltemplate-vampirechat .sheet-roll__bloodresult, .sheet-rolltemplate-vampirechat.sheet-rolltemplate-darkmode .sheet-roll__bloodresult,
@@ -4747,8 +4818,8 @@ input[type*=hidden][value=on] + .whisper strong {
 .sheet-rolltemplate-vampire .sheet-roll__blooddice--success,
 .sheet-rolltemplate-vampire.sheet-rolltemplate-darkmode .sheet-roll__blooddice--success {
 /*  background-image: url("https://s3.amazonaws.com/files.d20.io/images/227894565/fdPl8WDo32cJH9KNDBzFBA/med.png?1623426721");*/
-  background-image: url("https://cdn.discordapp.com/attachments/582820173195640836/1344172945995595837/Success_White.png?ex=67bff21b&is=67bea09b&hm=36104a1b441764ca731eb35fc0ac551a6573d026221e8b953c575a4214952c6c&");
-  background-size: 25%;
+  background-image: url("https://raw.githubusercontent.com/FredArroneous/WTA_CharSheet/refs/heads/main/SuccessWhite.png");
+  background-size: 37%;
 }
 .sheet-rolltemplate-vampirechat .sheet-roll__blooddice--failure, .sheet-rolltemplate-vampirechat.sheet-rolltemplate-darkmode .sheet-roll__blooddice--failure,
 .sheet-rolltemplate-vampirecomp .sheet-roll__blooddice--failure,
@@ -4768,8 +4839,8 @@ input[type*=hidden][value=on] + .whisper strong {
 .sheet-rolltemplate-vampire .sheet-roll__blooddice--crit,
 .sheet-rolltemplate-vampire.sheet-rolltemplate-darkmode .sheet-roll__blooddice--crit {
 /*  background-image: url("https://s3.amazonaws.com/files.d20.io/images/227901957/qCnU8HCU1S0Nsj_V06dbsA/med.png?1623429523");*/
-  background-image: url("https://cdn.discordapp.com/attachments/582820173195640836/1344172945576169534/Crit_Success_White.png?ex=67bff21b&is=67bea09b&hm=75bbbb645b1f7582ed2736d481db60a446948fa9122f82bf774853152464a042&");
-  background-size: 30%;
+  background-image: url("https://raw.githubusercontent.com/FredArroneous/WTA_CharSheet/refs/heads/main/CritSuccessWhite.png");
+  background-size: 34%;
 }
 .sheet-rolltemplate-vampirechat .sheet-roll__blooddice--critfail, .sheet-rolltemplate-vampirechat.sheet-rolltemplate-darkmode .sheet-roll__blooddice--critfail,
 .sheet-rolltemplate-vampirecomp .sheet-roll__blooddice--critfail,
@@ -4779,7 +4850,7 @@ input[type*=hidden][value=on] + .whisper strong {
 .sheet-rolltemplate-vampire .sheet-roll__blooddice--critfail,
 .sheet-rolltemplate-vampire.sheet-rolltemplate-darkmode .sheet-roll__blooddice--critfail {
 /*  background-image: url("https://s3.amazonaws.com/files.d20.io/images/227901956/g5qBvVymFDLlOSY55_1iIg/med.png?1623429523");*/
-  background-image: url("https://cdn.discordapp.com/attachments/582820173195640836/1344172945274306580/Brutal_White.png?ex=67bff21b&is=67bea09b&hm=1d580921027f3def3a5d2b0522026d682c5446c0dec3150c590cf36faa61844b&");
+  background-image: url("https://raw.githubusercontent.com/FredArroneous/WTA_CharSheet/refs/heads/main/BrutalWhite.png");
   background-size: 30%;
 }
 .sheet-rolltemplate-vampirechat .sheet-roll__dots-container, .sheet-rolltemplate-vampirechat.sheet-rolltemplate-darkmode .sheet-roll__dots-container,
@@ -7846,9 +7917,16 @@ input[name=attr_sheet_page][value=reverse] ~ * button.navigation__item[name*=rev
   opacity: 0.5;
 }
 .v5e .damage__container {
-  display: flex;
+  display: grid; /*Changing Flex to Grid*/
   align-items: center;
   justify-content: center;
+}
+.r1 {
+  grid-row: 1;
+}
+.r2 {
+  grid-row: 2;
+  margin-top: .1rem;
 }
 .v5e .damage__container + .damage__container {
   margin-left: 1.5rem;
@@ -7973,6 +8051,65 @@ input[name=attr_sheet_page][value=reverse] ~ * button.navigation__item[name*=rev
   display: none;
 }
 .v5e input.damage__max[value="15"] ~ .point__max--15 ~ .point {
+  display: none;
+}
+.v5e input.damage__max[value="16"] ~ .point__max--16 ~ .point {
+  display: none;
+}
+
+.v5e input.damage__max[value="17"] ~ .point__max--17 ~ .point {
+  display: none;
+}
+
+.v5e input.damage__max[value="18"] ~ .point__max--18 ~ .point {
+  display: none;
+}
+
+.v5e input.damage__max[value="19"] ~ .point__max--19 ~ .point {
+  display: none;
+}
+
+.v5e input.damage__max[value="20"] ~ .point__max--20 ~ .point {
+  display: none;
+}
+
+.v5e input.damage__max[value="21"] ~ .point__max--21 ~ .point {
+  display: none;
+}
+
+.v5e input.damage__max[value="22"] ~ .point__max--22 ~ .point {
+  display: none;
+}
+
+.v5e input.damage__max[value="23"] ~ .point__max--23 ~ .point {
+  display: none;
+}
+
+.v5e input.damage__max[value="24"] ~ .point__max--24 ~ .point {
+  display: none;
+}
+
+.v5e input.damage__max[value="25"] ~ .point__max--25 ~ .point {
+  display: none;
+}
+
+.v5e input.damage__max[value="26"] ~ .point__max--26 ~ .point {
+  display: none;
+}
+
+.v5e input.damage__max[value="27"] ~ .point__max--27 ~ .point {
+  display: none;
+}
+
+.v5e input.damage__max[value="28"] ~ .point__max--28 ~ .point {
+  display: none;
+}
+
+.v5e input.damage__max[value="29"] ~ .point__max--29 ~ .point {
+  display: none;
+}
+
+.v5e input.damage__max[value="30"] ~ .point__max--30 ~ .point {
   display: none;
 }
 .v5e input.damage__max[value="0"] ~ .point__max--1 ~ .point {
@@ -8110,8 +8247,11 @@ button.discipline__button--add {
   display: none;
 }
 .v5e .discipline__roll-type-selector[type=hidden] ~ .discipline__roll-attrs .discipline__select-option--attrib,
-.v5e .discipline__roll-type-selector[type=hidden] ~ .discipline__roll-attrs .discipline__select-option--skills, .v5e .discipline__roll-type-selector[type=hidden] ~ .discipline__roll-discipline .discipline__select-option--attrib,
-.v5e .discipline__roll-type-selector[type=hidden] ~ .discipline__roll-discipline .discipline__select-option--skills {
+.v5e .discipline__roll-type-selector[type=hidden] ~ .discipline__roll-attrs .discipline__select-option--skills,
+.v5e .discipline__roll-type-selector[type=hidden] ~ .discipline__roll-attrs .discipline__select-option--renown,
+.v5e .discipline__roll-type-selector[type=hidden] ~ .discipline__roll-discipline .discipline__select-option--attrib,
+.v5e .discipline__roll-type-selector[type=hidden] ~ .discipline__roll-discipline .discipline__select-option--skills,
+.v5e .discipline__roll-type-selector[type=hidden] ~ .discipline__roll-discipline .discipline__select-option--renown {
   display: none;
 }
 .v5e .discipline__roll-type-selector[type=hidden][value=attributes] ~ .discipline__roll-attrs {
@@ -8124,6 +8264,12 @@ button.discipline__button--add {
   display: block;
 }
 .v5e .discipline__roll-type-selector[type=hidden][value=skills] ~ .discipline__roll-attrs .discipline__select-option--skills {
+  display: block;
+}
+.v5e .discipline__roll-type-selector[type=hidden][value=renown] ~ .discipline__roll-attrs {
+  display: block;
+}
+.v5e .discipline__roll-type-selector[type=hidden][value=renown] ~ .discipline__roll-attrs .discipline__select-option--renown {
   display: block;
 }
 .v5e .discipline__roll-type-selector[type=hidden][value=discipline] ~ .discipline__roll-discipline {
